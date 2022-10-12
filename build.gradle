@@ -1,0 +1,64 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        plugins_version = '7.3.0'
+        kotlin_version = "1.7.10"
+
+        compile_sdk_version = 33
+        build_tools_version = "33.0.0"
+        min_sdk_version = 23
+        target_sdk_version = 29
+
+        // region google
+        core_version = "1.9.0"
+        appcompat_version = "1.5.1"
+        material_version = "1.6.1"
+        constraint_version = "2.1.4"
+        flexbox_version = '3.0.0'
+        lifecycle_version = "2.5.1"
+        activity_version = "1.6.0"
+        fragment_version = "1.5.3"
+        room_version = "2.4.3"
+        kotlin_coroutines = "1.6.2"
+        nav_version = "2.5.2"
+        work_version = "2.7.1"
+        paging_version = "3.1.1"
+        media_version = "1.6.0"
+        hilt_version = "2.43.2"
+        hilt_jetpack_version = "1.0.0"
+        compose_version = '1.2.1'
+        compose_compiler_version = '1.3.0' // 兼容kotlin1.7.10
+        // endregion
+
+        // region vehicle-SDK
+        kuolie_common_version = "1.2.37"
+        kuolie_data_version = "1.3.28"
+        kuolie_voice_version = "1.6.21"
+        kuolie_point_version = "0.4.28"
+        kuolie_video_cache_version = "1.0.0"
+        video_cache_version = "2.7.1"
+        // endregion
+
+        retrofit_version = "2.9.0"
+        okhttp_version = "4.9.3"
+        glide_version = "4.13.2"
+        coil_version = "1.4.0"
+        live_event_bus_version = "1.8.0"
+
+        util_version = "1.30.6"
+        roundedimageview_version = "2.3.0"
+        circleimageview_version = "3.1.0"
+        lottieVersion = "5.0.3"
+        svga_version = "2.6.1"
+
+        im_version = "6.1.2166"
+        umeng_version = "latest.integration"
+        bugly_version = "4.0.4"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.3.0' apply false
+    id 'com.android.library' version '7.3.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+}
