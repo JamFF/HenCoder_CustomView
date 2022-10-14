@@ -10,9 +10,6 @@ import android.util.Log
 import android.view.View
 import com.hencoder.view.ex.dp2px
 
-private val RADIUS = 50f.dp2px
-private const val TAG = "TestView"
-
 /**
  * Description: Canvas、Paint、Path一些基础API
  * Author: 傅健
@@ -23,6 +20,11 @@ class TestView @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
+
+    companion object {
+        private val RADIUS = 50f.dp2px
+        private const val TAG = "TestView"
+    }
 
     // Paint.ANTI_ALIAS_FLAG 抗锯齿
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
